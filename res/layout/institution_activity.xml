@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <RadioGroup
+         android:id="@+id/institution_button_group"
+         android:layout_width="55dp"
+         android:divider="@drawable/separater"
+         android:showDividers="middle"
+         android:dividerPadding="2dp"
+         android:layout_height="fill_parent"
+         android:background="@drawable/main_bottom_buttonpanel"
+         android:orientation="vertical" >
+         <RadioButton 
+             android:id="@+id/baidu_page"
+             android:layout_weight="1"
+			 style="?android:attr/buttonBarButtonStyle"
+             android:button="@null"
+             android:layout_height="55dp"
+             android:layout_width="wrap_content"
+             android:text="电信"
+             android:background="@drawable/institution_tab_color_selector"
+             android:checked="true"
+             />
+         <RadioButton
+             android:id="@+id/csdn_page"
+             android:layout_weight="1"
+			 style="?android:attr/buttonBarButtonStyle"
+             android:button="@null"
+             android:layout_height="55dp"
+             android:layout_width="wrap_content"
+             android:text="电器"
+             android:background="@drawable/institution_tab_color_selector"
+             />
+         <RadioButton 
+             android:id="@+id/cnblogs_page"
+             android:layout_weight="1"
+			 style="?android:attr/buttonBarButtonStyle"
+             android:button="@null"
+             android:layout_height="55dp"
+             android:layout_width="wrap_content"
+             android:text="计算机"
+             android:background="@drawable/institution_tab_color_selector"
+             />
+         <RadioButton
+             android:id="@+id/main_case_page"
+             android:layout_weight="1"
+		     style="?android:attr/buttonBarButtonStyle"
+             android:button="@null"
+             android:layout_height="55dp"
+             android:layout_width="wrap_content"
+             android:text="@string/case_page"
+             android:background="@drawable/institution_tab_color_selector"
+             />
+         <RadioButton
+             android:id="@+id/main_mine_page"
+             android:layout_weight="1"
+		     style="?android:attr/buttonBarButtonStyle"
+             android:button="@null"
+             android:layout_height="55dp"
+             android:layout_width="wrap_content"
+             android:text="@string/mine_page"
+             android:background="@drawable/institution_tab_color_selector"
+             />
+     </RadioGroup>
+      <WebView
+        android:id="@+id/institution_loadWebView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+      	  />
+     
+
+
+</LinearLayout>

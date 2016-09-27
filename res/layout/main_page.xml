@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+		<FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/android_layout_bg"/>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/main_button_group"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/main_bottom_buttonpanel"
+            android:orientation="horizontal" >
+            <RadioButton 
+                android:id="@+id/main_home_page"
+                android:layout_weight="1"
+				style="?android:attr/buttonBarButtonStyle"
+                android:button="@null"
+                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:text="@string/home_page"
+                android:textColor="@drawable/text_color_selector"
+                android:background="@drawable/tab_background_selector"
+                android:focusable="true"
+                android:checked="true"
+                />
+            <RadioButton
+                android:id="@+id/main_study_page"
+                android:layout_weight="1"
+				style="?android:attr/buttonBarButtonStyle"
+                android:button="@null"
+                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:text="@string/study_page"
+                android:textColor="@drawable/text_color_selector"
+                android:background="@drawable/tab_background_selector"
+                />
+            <RadioButton 
+                android:id="@+id/main_institution_page"
+                android:layout_weight="1"
+				style="?android:attr/buttonBarButtonStyle"
+                android:button="@null"
+                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:text="@string/institution_page"
+                android:textColor="@drawable/text_color_selector"
+                android:background="@drawable/tab_background_selector"
+                />
+            <RadioButton
+                android:id="@+id/main_case_page"
+                android:layout_weight="1"
+				style="?android:attr/buttonBarButtonStyle"
+                android:button="@null"
+                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:text="@string/case_page"
+                android:textColor="@drawable/text_color_selector"
+                android:background="@drawable/tab_background_selector"
+                />
+            <RadioButton
+                android:id="@+id/main_mine_page"
+                android:layout_weight="1"
+				style="?android:attr/buttonBarButtonStyle"
+                android:button="@null"
+                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:text="@string/mine_page"
+                android:textColor="@drawable/text_color_selector"
+                android:background="@drawable/tab_background_selector"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>

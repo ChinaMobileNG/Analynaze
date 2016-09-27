@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBDBDB"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mine_page_portrait"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/mine_page_shape"
+        android:orientation="horizontal" >
+
+        <com.widgets.analyzecase.CircleImageView
+	        android:layout_width="65dp"
+	        android:layout_height="65dp"
+	        android:layout_marginTop="35dp"
+	        android:layout_marginLeft="15dp"
+	        android:src="@drawable/no_portrait"
+	        android:id="@+id/mine_head_portrait"
+         />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/mine_head_portrait"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/mine_name"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#FFFF"
+                android:text="J_Rock"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/mine_major"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:textColor="#C2C2C2"
+                android:layout_marginTop="2dp"
+                android:text="计算机"
+                android:textSize="8dp"
+                />
+            <TextView
+                android:id="@+id/mine_class"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:textColor="#C2C2C2"
+                android:text="电计1303班"
+                android:textSize="8dp"
+                />
+            
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="76dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/right_arrow" />
+        <TextView 
+            android:id="@+id/enter_mine_page"
+            android:layout_height="15dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="73dp"
+            android:layout_toLeftOf="@id/right_arrow"
+            android:layout_marginRight="4dp"
+            android:textColor="#C2C2C2"
+            android:text="@string/enter_mine_page"
+            />
+
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFF"
+        android:orientation="horizontal"
+        android:id="@+id/setting_layout"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/dlutlabel"
+            />
+        <TextView 
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="#636363"
+            android:text="@string/setting"
+            android:textSize="15dp"
+            />
+        
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFF"
+        android:orientation="horizontal"
+        android:id="@+id/signin_layout"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/dlutlabel"
+            />
+        <TextView 
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="#636363"
+            android:text="@string/signin"
+            android:textSize="15dp"
+            />
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFF"
+        android:id="@+id/about_layout"
+        >
+        <ImageView 
+            android:id="@+id/about_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="6dp"
+            android:layout_height="13dp"
+            android:src="@drawable/right_arrow_white"
+	        android:layout_marginTop="15dp"
+            />
+	    <TextView
+	        android:layout_toLeftOf="@id/about_arrow"
+	        android:layout_width="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="4dp"
+	        android:layout_marginTop="15dp"
+	        android:layout_height="25dp"
+	        android:textColor="#636363"
+	        android:textSize="15dp"
+	        android:text="@string/about"
+	        />
+    </RelativeLayout>
+
+    
+
+</LinearLayout>
